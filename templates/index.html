@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Form</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+    </div>
+    <div class="container">
+        <h1>CV Form</h1>
+        <form action="submit_cv.php" method="POST">
+         
+            <section>
+                <h2>Personal Information</h2>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone"><br><br>
+
+                <label for="linkedin">LinkedIn Profile:</label>
+                <input type="url" id="linkedin" name="linkedin"><br><br>
+            </section>
+
+            <!-- Experience -->
+            <section>
+                <h2>Experience</h2>
+                <label for="job-title">Job Title:</label>
+                <input type="text" id="job-title" name="job_title" required><br><br>
+
+                <label for="company">Company Name:</label>
+                <input type="text" id="company" name="company" required><br><br>
+
+                <label for="job-dates">Employment Dates:</label>
+                <input type="text" id="job-dates" name="job_dates" required><br><br>
+
+                <label for="job-responsibilities">Job Responsibilities:</label><br>
+                <textarea id="job-responsibilities" name="job_responsibilities" rows="4" required></textarea><br><br>
+            </section>
+
+            <!-- Education -->
+            <section>
+                <h2>Education</h2>
+                <label for="degree">Degree:</label>
+                <input type="text" id="degree" name="degree" required><br><br>
+
+                <label for="university">University Name:</label>
+                <input type="text" id="university" name="university" required><br><br>
+
+                <label for="grad-year">Graduation Year:</label>
+                <input type="text" id="grad-year" name="grad_year" required><br><br>
+            </section>
+
+            <!-- Skills -->
+            <section>
+                <h2>Skills</h2>
+                <label for="skills">List Your Skills (comma-separated):</label><br>
+                <input type="text" id="skills" name="skills" required><br><br>
+            </section>
+
+            <button type="submit">Select Templates</button>
+        </form>
+    </div>
+</body>
+</html>
